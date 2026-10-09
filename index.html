@@ -38,6 +38,7 @@
     <header class="sticky top-0 z-50 bg-brand-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-end">
             <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-brand-text">
+                <a href="#guia-gratuita" class="hover:text-brand-emphasis transition">Guía gratuita</a>
                 <a href="#vias" class="hover:text-brand-emphasis transition">Modificación y Prórrogas</a>
                 <a href="#plazos" class="hover:text-brand-emphasis transition">Control de Plazos</a>
                 <a href="#faqs-modificacion" class="hover:text-brand-emphasis transition">Modificación (FAQ)</a>
@@ -76,9 +77,6 @@
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[#B88A16]/40 max-w-md w-full">
                         <img src="Gemini_Generated_Image_4fommm4fommm4fom (1).jpg" alt="Titular mostrando su TIE" class="w-full h-auto object-cover transform hover:scale-105 transition duration-500">
-                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-center">
-                            <p class="text-xs text-white font-medium">Residencia legal y tranquilidad en España</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -391,6 +389,93 @@
         </div>
     </section>
 
+    <!-- LEAD MAGNET / GUÍA GRATUITA
+         Nota interna: revisar y validar jurídicamente todos los plazos, requisitos y vías descritos en la página antes de publicarla.
+         El formulario de esta sección abre WhatsApp; no almacena datos ni sustituye un CRM/backend. -->
+    <section id="guia-gratuita" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <span style="color:#B88A16;" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+                        <span class="w-2 h-2 rounded-full bg-[#B88A16]"></span> Recurso gratuito · Machuca &amp; Abogados
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-brand-global leading-tight">
+                        Tu TIE después de la regularización extraordinaria
+                    </h2>
+                    <p class="text-lg text-slate-700 leading-relaxed max-w-2xl">
+                        Descarga nuestra guía práctica para entender qué debes revisar antes de que venza tu autorización y qué preguntas conviene resolver para preparar el siguiente trámite.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 rounded-xl bg-slate-50 border border-slate-200 p-4">
+                            <span class="text-xl" aria-hidden="true">📋</span>
+                            <div><p class="font-semibold text-brand-global">Checklist documental</p><p class="text-sm text-slate-600 mt-1">Organiza la documentación y las dudas que necesitas revisar.</p></div>
+                        </div>
+                        <div class="flex items-start gap-3 rounded-xl bg-slate-50 border border-slate-200 p-4">
+                            <span class="text-xl" aria-hidden="true">🗓️</span>
+                            <div><p class="font-semibold text-brand-global">Planifica con tiempo</p><p class="text-sm text-slate-600 mt-1">Identifica la fecha de vencimiento y prepara tus próximos pasos.</p></div>
+                        </div>
+                        <div class="flex items-start gap-3 rounded-xl bg-slate-50 border border-slate-200 p-4">
+                            <span class="text-xl" aria-hidden="true">⚖️</span>
+                            <div><p class="font-semibold text-brand-global">Diferencia los trámites</p><p class="text-sm text-slate-600 mt-1">Comprende la diferencia entre la tarjeta física y la autorización.</p></div>
+                        </div>
+                        <div class="flex items-start gap-3 rounded-xl bg-slate-50 border border-slate-200 p-4">
+                            <span class="text-xl" aria-hidden="true">🔎</span>
+                            <div><p class="font-semibold text-brand-global">Prepara tu consulta</p><p class="text-sm text-slate-600 mt-1">Ten a mano las preguntas clave para revisar tu situación.</p></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed">Material informativo general. La vía aplicable y sus requisitos dependen de la autorización concedida y de las circunstancias de cada persona.</p>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="relative bg-brand-global text-white rounded-2xl p-7 sm:p-9 shadow-xl overflow-hidden">
+                        <div class="absolute -right-12 -top-12 w-40 h-40 rounded-full border border-[#BE986E]/40"></div>
+                        <div class="absolute -right-5 -top-5 w-24 h-24 rounded-full border border-[#BE986E]/40"></div>
+                        <div class="relative z-10">
+                            <div class="inline-flex items-center gap-2 text-[#F4D78A] text-xs font-bold uppercase tracking-widest mb-4"><span>✦</span> Gratis</div>
+                            <h3 class="text-2xl sm:text-3xl font-serif font-bold mb-3">Recibe la guía</h3>
+                            <p class="text-slate-200 text-sm leading-relaxed mb-6">Déjanos tu nombre y elige cómo contactar con el despacho para solicitar el recurso.</p>
+                            <form id="guia-form" class="space-y-4">
+                                <div>
+                                    <label for="guia-nombre" class="block text-sm font-medium mb-2">Tu nombre</label>
+                                    <input id="guia-nombre" name="nombre" type="text" autocomplete="name" required class="w-full rounded-lg px-4 py-3 text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#BE986E]" placeholder="Cómo te llamas">
+                                </div>
+                                <div>
+                                    <label for="guia-email" class="block text-sm font-medium mb-2">Tu correo electrónico <span class="text-slate-300 font-normal">(opcional)</span></label>
+                                    <input id="guia-email" name="email" type="email" autocomplete="email" class="w-full rounded-lg px-4 py-3 text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#BE986E]" placeholder="nombre@correo.com">
+                                </div>
+                                <button type="submit" style="background-color:#B88A16;" class="w-full hover:opacity-90 text-white font-semibold px-6 py-4 rounded-xl shadow-lg transition">
+                                    Solicitar mi guía por WhatsApp <span aria-hidden="true">→</span>
+                                </button>
+                                <p class="text-xs text-slate-300 leading-relaxed">Al pulsar, se abrirá WhatsApp con un mensaje preparado para el despacho. Este formulario no guarda ni envía tus datos automáticamente.</p>
+                            </form>
+                            <div class="mt-6 pt-5 border-t border-white/20">
+                                <p class="text-sm text-slate-200 mb-3">¿Necesitas revisar tu caso?</p>
+                                <a href="#contacto" class="inline-flex items-center justify-center w-full border border-[#BE986E] text-[#F1D5B4] hover:bg-white/10 font-medium px-5 py-3 rounded-xl transition">Solicitar asesoramiento jurídico</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Solicitud de la guía mediante WhatsApp: no se almacenan datos en esta página.
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('guia-form');
+            if (!form) return;
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const nombre = document.getElementById('guia-nombre').value.trim();
+                const email = document.getElementById('guia-email').value.trim();
+                const mensaje = 'Hola, quiero solicitar la guía gratuita “Tu TIE después de la regularización extraordinaria”.' +
+                    '\nNombre: ' + nombre + (email ? '\nCorreo: ' + email : '');
+                window.open('https://wa.me/34639214052?text=' + encodeURIComponent(mensaje), '_blank', 'noopener,noreferrer');
+            });
+        });
+    </script>
+
+
     <!-- SECCIÓN DE CONTACTO / CTA FINAL -->
     <section id="contacto" class="py-20 bg-brand-global text-brand-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -402,38 +487,42 @@
                 Completa el formulario y un especialista en extranjería e inmigración se pondrá en contacto contigo.
             </p>
             <div class="bg-brand-white text-brand-text p-8 sm:p-10 rounded-2xl shadow-2xl text-left border-t-4" style="border-color: #B88A16;">
-                <form id="contact-form" class="space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label for="nombre" class="block text-sm font-semibold text-brand-global mb-2">Nombre completo</label>
-                            <input id="nombre" name="nombre" type="text" required class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-brand-emphasis focus:ring-2 focus:ring-brand-emphasis/30 outline-none" placeholder="Tu nombre">
+                            <label for="contacto-nombre" class="block text-sm font-semibold text-brand-global mb-2">Nombre y apellidos</label>
+                            <input id="contacto-nombre" name="nombre" type="text" autocomplete="name" required class="w-full rounded-lg px-4 py-3 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#BE986E]" placeholder="Tu nombre completo">
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-semibold text-brand-global mb-2">Correo electrónico</label>
-                            <input id="email" name="email" type="email" required class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-brand-emphasis focus:ring-2 focus:ring-brand-emphasis/30 outline-none" placeholder="tu@email.com">
+                            <label for="contacto-email" class="block text-sm font-semibold text-brand-global mb-2">Correo electrónico</label>
+                            <input id="contacto-email" name="email" type="email" autocomplete="email" required class="w-full rounded-lg px-4 py-3 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#BE986E]" placeholder="nombre@correo.com">
+                        </div>
+                        <div>
+                            <label for="contacto-telefono" class="block text-sm font-semibold text-brand-global mb-2">Teléfono</label>
+                            <input id="contacto-telefono" name="telefono" type="tel" autocomplete="tel" class="w-full rounded-lg px-4 py-3 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#BE986E]" placeholder="Tu teléfono de contacto">
+                        </div>
+                        <div>
+                            <label for="contacto-tramite" class="block text-sm font-semibold text-brand-global mb-2">¿Qué necesitas consultar?</label>
+                            <select id="contacto-tramite" name="tramite" required class="w-full rounded-lg px-4 py-3 border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#BE986E]">
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="modificacion">Modificar mi autorización</option>
+                                <option value="prorroga">Prorrogar mi autorización</option>
+                                <option value="otro">Otra consulta de extranjería</option>
+                            </select>
                         </div>
                     </div>
                     <div>
-                        <label for="telefono" class="block text-sm font-semibold text-brand-global mb-2">Teléfono o WhatsApp</label>
-                        <input id="telefono" name="telefono" type="tel" required class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-brand-emphasis focus:ring-2 focus:ring-brand-emphasis/30 outline-none" placeholder="+34 600 000 000">
+                        <label for="contacto-mensaje" class="block text-sm font-semibold text-brand-global mb-2">Cuéntanos brevemente tu consulta</label>
+                        <textarea id="contacto-mensaje" name="mensaje" rows="4" class="w-full rounded-lg px-4 py-3 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#BE986E]" placeholder="Describe brevemente qué necesitas revisar (no incluyas datos sensibles)"></textarea>
                     </div>
-                    <div>
-                        <label for="mensaje" class="block text-sm font-semibold text-brand-global mb-2">Cuéntanos tu caso</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-brand-emphasis focus:ring-2 focus:ring-brand-emphasis/30 outline-none resize-y" placeholder="Indica brevemente tu situación y la fecha de caducidad de tu tarjeta"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-brand-global hover:bg-brand-emphasis text-white font-semibold px-6 py-4 rounded-lg transition shadow-md">Enviar consulta por WhatsApp</button>
-                    <p class="text-xs text-slate-500 text-center">Al enviar, se abrirá WhatsApp para que podamos responderte.</p>
+                    <p class="text-xs text-slate-500 leading-relaxed">Al enviar este formulario, tus datos deberían tratarse conforme a la política de privacidad del despacho. Antes de publicar, conecta el formulario a un sistema seguro de recepción y añade el consentimiento y la información de privacidad que correspondan.</p>
+                    <button type="submit" style="background-color: #B88A16;" class="w-full hover:opacity-90 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition">
+                        Enviar consulta →
+                    </button>
                 </form>
-                <script>
-                    document.getElementById('contact-form').addEventListener('submit', function(event) {
-                        event.preventDefault();
-                        const data = new FormData(event.target);
-                        const text = 'Hola, soy ' + data.get('nombre') + '. Mi correo es ' + data.get('email') + ' y mi teléfono es ' + data.get('telefono') + '. Mi consulta: ' + data.get('mensaje');
-                        window.open('https://wa.me/34639214052?text=' + encodeURIComponent(text), '_blank');
-                    });
-                </script>
             </div>
         </div>
     </section>
+    <!-- Revisión previa a publicación: el contenido jurídico de la página original debe ser validado por el despacho, especialmente los plazos, artículos aplicables, requisitos y supuestos de prórroga. -->
 </body>
 </html>
